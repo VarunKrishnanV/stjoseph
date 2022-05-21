@@ -46,6 +46,8 @@ body{
     line-height: 1;
 }
 
+
+
 .heading-lg{
     font-size: 120px;
 }
@@ -83,6 +85,11 @@ body{
     border: 2px solid var(--primary);
     color: var(--primary);
 }
+
+.button-outline-small{
+    padding: 5px 15px;
+}
+
 .button-outline:hover{
     background-color: var(--primary);
     color: var(--white);
@@ -144,7 +151,7 @@ body{
 ---------------------*/
 
 .header{
-
+    padding: 30px 0px 100px;
 }
 .header__title{
     font-family: var(--heading);
@@ -170,7 +177,7 @@ body{
 
 @media screen and (max-width : 768px) {
     .header__image img{
-        margin-top: 10px;
+        margin-top: 50px;
     }
 }
 
@@ -214,21 +221,27 @@ body{
     left: 0;
     z-index: 1;
 }
-.card__content{
+.service__card .card__content{
     color: white;
     position: relative;
     z-index: 10;
 
 
 }
-.card__title{
+.service__card .card__title{
     font-size: 28px;
     text-transform: uppercase;
     font-weight: 700;
 }
-.card__description{
+.service__card .card__description{
     font-size: 18px;
     font-weight: 200;
+}
+
+
+/* find you location and you matter here */
+.folAndYml{
+    padding: 100px 0px;
 }
 
 /* find our locations */
@@ -252,3 +265,110 @@ body{
     padding: 20px 0;
     /* background-color: var(--primary-light); */
 }
+
+
+/* latest updates */
+.latest{
+    background-color: var(--primary-light);
+    padding: 100px 0;
+
+}
+
+.latest__card{
+    background-color: white;
+    padding: 40px 20px;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+}
+
+.latest__date{
+    font-weight: 600;
+    font-style: italic;
+    
+}
+
+.latest__title{
+    font-weight: 600;
+}
+
+.latest__card--active{
+    background-color: transparent;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.103);
+}
+
+
+
+/*------- 
+    care matters here 
+--------*/
+.careMatters{
+    padding: 100px 0;
+}
+.careMatters__description{
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.careMatters__content{
+    background-image: url(../assets/images/care-text.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.careMatters__image{
+    width: 100%;
+    height: auto;
+}
+
+/* ------ 
+     upcoming event 
+--------*/
+
+.upcoming{
+    padding: 50px 0 100px 0;
+}
+
+.upcomingEvent{
+    padding: 0px 0;
+}
+
+.upcomingEvent__image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.upcomingEvent__date{
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 24px;
+    font-style: italic;
+}
+.upcomingEvent__title{
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 21px;
+}
+
+
+.section_headerWithBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* media queries */
+@media screen and (max-width : 768px) {
+    .heading {
+        font-size: 58px;
+    }
+    .section_headerWithBtn{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .careMatters__description {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+}
+
+.
