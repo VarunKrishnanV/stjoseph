@@ -1,0 +1,254 @@
+/*------------------- 
+      Global 
+---------------------*/
+
+/* variables */
+:root{
+    --primary-light : #EFF8FF;
+    --primary : #0071CE;
+    --white : #fff;
+    --dark : #000;
+    --dark-light : #4F4F4F;
+    --heading : 'Bebas Neue', cursive;
+    --fs-description : 16px;
+}
+
+
+/* global reset */
+*, 
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+
+
+/* style of bold */
+body{
+    font-family: "Calibri", sans-serif;
+    font-size: 16px;
+    margin: auto;
+}
+
+
+
+/*------------------- 
+        components 
+---------------------*/
+
+/* heading */
+.heading{
+    color: var(--primary);
+    font-family: var(--heading);
+    font-size: 92px;
+    line-height: 1;
+}
+
+.heading-lg{
+    font-size: 120px;
+}
+/* buttons */
+.button{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.button:hover{
+    transform: translateY(-1px);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.164);
+}
+
+.button:active{
+    transform: translateY(2px);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.164);
+}
+
+.button-primary{
+    background-color: var(--primary);
+    color: white;
+}
+.button-primary:hover{
+    background-color: #003E71;
+}
+
+.button-outline{
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+.button-outline:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.button-small{
+    background-color: white;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* text-link */
+.link-text{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link-text i{
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+
+/*------------------- 
+    corona alert 
+---------------------*/
+
+.info{
+    padding: 10px 20px;
+    display: flex;
+    background-color: #EFF8FF;
+    align-items: center;
+    justify-content: space-between;
+}
+.info__icon{
+    margin-right: 5px;
+    color: var(--primary);
+}
+
+.info__description{
+    margin: 0;
+}
+
+.info__title{
+    color: var(--primary);
+}
+.info__close{
+    cursor: pointer;
+}
+
+
+
+
+/*------------------- 
+        Header 
+---------------------*/
+
+.header{
+
+}
+.header__title{
+    font-family: var(--heading);
+    font-size: 92px;
+    line-height: 1;
+    color: var(--primary);
+}
+.header__description{
+    font-size: var(--fs-description);
+}
+
+.header__cta{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (max-width : 768px) {
+    .header__image img{
+        margin-top: 10px;
+    }
+}
+
+
+/*------------------- 
+        services 
+---------------------*/
+
+.services{
+    margin: 50px 0;
+
+}
+.service__card{
+    background-image: url("./../assets/images/img-area-of-care.png");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    padding: 20px;
+    /* background-color: red; */
+}
+.service__card--1{
+    background-image: url("./../assets/images/img-area-of-care.png");
+}
+.service__card--2{
+    background-image: url("./../assets/images/img-urgent-care.png");
+}
+.service__card--3{
+    background-image: url("./../assets/images/img-fundraising.png");
+}
+
+.service__card::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(2.28deg, #003E71 4.19%, rgba(0, 113, 206, 0) 92.18%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.card__content{
+    color: white;
+    position: relative;
+    z-index: 10;
+
+
+}
+.card__title{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.card__description{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+/* find our locations */
+.fol{
+    background-image: url("../assets/images/location.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.fol__heading{
+    
+}
+.fol__description{
+    
+}
+
+/* you matter here */
+
+.ymh{
+    margin-top: 50px;
+    padding: 20px 0;
+    /* background-color: var(--primary-light); */
+}
