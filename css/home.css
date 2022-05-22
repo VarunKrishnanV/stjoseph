@@ -568,6 +568,7 @@ Sidebar
     .logo-container {
         flex-direction: column;
         align-items: flex-start;
+        gap: 20px;
     }
 
     .logo {
@@ -586,5 +587,8 @@ Sidebar
     }
     .language--main {
         display: none;
+    }
+    .logo:first-child {
+        border-right: none;
     }
 }
