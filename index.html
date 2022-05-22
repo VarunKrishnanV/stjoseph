@@ -43,13 +43,80 @@
                 </a>
             </span>
         </p>
-        <i class="info__close fa-solid fa-xmark"></i>
+        <!-- <i class="info__close fa-solid fa-xmark"></i> -->
     </div>
 
     <!-- navigation -->
+    <div class="nav">
+        <div class="container">
+            <div class="row">
+                <div class="nav__logos col-4">
+                    <img src="./assets/logo/logo-color-hc.svg" alt="logo">
+                    <img src="./assets/logo/logo-color-foundation.svg" alt="logo">
+                </div>
+                <div class="nav__options col-8">
+                    <div class="nav__search">
+                        <i class="search__searchIcon fa-solid fa-search"></i>
+                        <input class="search__searchInput" type="text" placeholder="Search">
+                        <i class="search__voiceIcon fa-solid fa-microphone"></i>
+                    </div>
+                    <button class="nav__donation button button-primary">Make a Donation</button>
+                    <div class="language"><a href="#">EN</a> | <a href="#">FR</a></div>
+                    <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight" class="nav__hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- header -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Hello! Choose where you have to go..</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav__links">
+                <li class="nav__link">
+                    <div class="nav__search">
+                        <i class="search__searchIcon fa-solid fa-search"></i>
+                        <input class="search__searchInput" type="text" placeholder="Search">
+                        <i class="search__voiceIcon fa-solid fa-microphone"></i>
+                    </div>
+                </li>
+                <li class="nav__link"><a href="#">Mental health </a>
+                    <ul class="submenu">
+                        <li><a href="#">Finding help</a></li>
+                        <li><a href="#">Brochures</a></li>
+                        <li><a href="#">Your mental health questionnaire</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="#">Services</a></li>
+                <li class="nav__link"><a href="#">News</a>
+                    <ul class="submenu">
+                        <li><a href="#">Press releases</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="#">About</a>
+                    <ul class="submenu">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our team</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link">
+                    <a href="#">
+                        <button class="nav__donation button button-primary">Make a Donation</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="container">
+        <!-- header -->
         <div class="row header mt-5">
             <div class="col-12  col-md-12 col-lg-6 header__information">
                 <h1 class="header__title">
@@ -62,10 +129,10 @@
                     community.
                 </p>
                 <div class="header__cta">
-                    <a href="https://www.sjhc.london.on.ca/about-us">
+                    <a href="#">
                         <button class="button button-primary">Know more</button>
                     </a>
-                    <a class="link-text" href="https://www.sjhc.london.on.ca/about-us/our-foundation">About our
+                    <a class="link-text" href="#">About our
                         foundation <i class="fa-solid fa-chevron-right"></i></a>
                 </div>
             </div>
@@ -84,7 +151,7 @@
                     <p class="card__description">
                         Find the program, service or clinic you are looking for.
                     </p>
-                    <a href="">
+                    <a href="#">
                         <button class="button button-small">Learn more</button>
                     </a>
                 </div>
@@ -97,7 +164,7 @@
                     <p class="card__description">
                         See conditions treated at Urgent Care and hours of operation.
                     </p>
-                    <a href="">
+                    <a href="#">
                         <button class="button button-small">Learn more</button>
                     </a>
                 </div>
@@ -110,12 +177,13 @@
                     <p class="card__description">
                         You can help improve and even save lives with your support.
                     </p>
-                    <a href="">
+                    <a href="#">
                         <button class="button button-small">Learn more</button>
                     </a>
                 </div>
             </div>
         </div>
+
         <!-- find our locations and you matter here -->
         <div class="row folAndYml">
             <div class="col-12 col-lg-6">
@@ -168,7 +236,7 @@
                                 Lottery, in support of London’s regional hospitals, is back for the spring season
                                 and is offering a grand prize with the
                                 choice between two dream home options or walk away with $1.. </p>
-                            <a class="link-text">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="#" class="link-text">Learn more <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-sm-12 latest__card">
@@ -183,7 +251,7 @@
                                 west have updated their ongoing protections against COVID-19 and confirm that
                                 current masking requirements for all
                                 individuals entering their facilities will continue indefinitely... </p>
-                            <a class="link-text">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="#" class="link-text">Learn more <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-sm-12 latest__card">
@@ -198,7 +266,7 @@
                                 become a Canadian pioneer in the development and use of digital 3D holograms to
                                 enhance surgical precision for shoulder
                                 replacement patients, which is expected to reduce complications..</p>
-                            <a class="link-text">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="#" class="link-text">Learn more <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -273,6 +341,57 @@
 
         </div>
     </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-12 logo-container">
+                    <div class="logo">
+                        <img class="footer__logo" src="./assets/logo/logo-white-hc.svg" alt="">
+                        <p class="footer__phone"><i class="fa-solid fa-phone"></i> 519 646-6100</p>
+                    </div>
+                    <div class="logo">
+                        <img class="footer__logo" src="./assets/logo/logo-white-foundation.svg" alt="">
+                        <p class="footer__phone"><i class="fa-solid fa-phone"></i> 519 646-6085</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 quickLinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Areas of Care</a></li>
+                        <li><a href="#">Fundraising priorities</a></li>
+                        <li><a href="#">Referral forms</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Strategic Plan</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Patient and Family</a>
+                            <p>Feedback : Contact patient Relations</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12 socialAccredition">
+                    <div class="social">
+                        <img src="./assets/icons/icon-facebook.svg" alt="">
+                        <img src="./assets/icons/icon-linkedin.svg" alt="">
+                        <img src="./assets/icons/icon-twitter.svg" alt="">
+                        <img src="./assets/icons/icon-youtube.svg" alt="">
+                    </div>
+                    <div class="accredition">
+                        <img src="./assets/images/batch-acccredition-1.png" alt="">
+                        <img src="./assets/images/batch-acccredition-2.png" alt="">
+                    </div>
+                    <div class="western">
+                        <img src="./assets/images/western.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright">
+                <p>Copyright © 2020 St. Joseph's Health Care London. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- javascript files -->
