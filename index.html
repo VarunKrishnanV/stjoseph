@@ -55,12 +55,12 @@
                     <img src="./assets/logo/logo-color-foundation.svg" alt="logo">
                 </div>
                 <div class="nav__options col-8">
-                    <div class="nav__search">
+                    <div class="nav__search nav__search--main">
                         <i class="search__searchIcon fa-solid fa-search"></i>
                         <input class="search__searchInput" type="text" placeholder="Search">
                         <i class="search__voiceIcon fa-solid fa-microphone"></i>
                     </div>
-                    <button class="nav__donation button button-primary">Make a Donation</button>
+                    <button class="nav__donation nav__donation--main button button-primary">Make a Donation</button>
                     <div class="language"><a href="#">EN</a> | <a href="#">FR</a></div>
                     <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                         aria-controls="offcanvasRight" class="nav__hamburger">
@@ -73,7 +73,8 @@
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Hello! Choose where you have to go..</h5>
+            <h5 id="offcanvasRightLabel"><div class="language"><a href="#">EN</a> | <a href="#">FR</a></div>
+</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -85,7 +86,7 @@
                         <i class="search__voiceIcon fa-solid fa-microphone"></i>
                     </div>
                 </li>
-                <li class="nav__link"><a href="#">Mental health </a>
+                <li class="nav__link"><a href="#">Mental health <i class="fa-solid fa-chevron-right"></i></a>
                     <ul class="submenu">
                         <li><a href="#">Finding help</a></li>
                         <li><a href="#">Brochures</a></li>
@@ -93,13 +94,13 @@
                     </ul>
                 </li>
                 <li class="nav__link"><a href="#">Services</a></li>
-                <li class="nav__link"><a href="#">News</a>
+                <li class="nav__link"><a href="#">News <i class="fa-solid fa-chevron-right"></i></a>
                     <ul class="submenu">
                         <li><a href="#">Press releases</a></li>
                         <li><a href="#">FAQ</a></li>
                     </ul>
                 </li>
-                <li class="nav__link"><a href="#">About</a>
+                <li class="nav__link"><a href="#">About <i class="fa-solid fa-chevron-right"></i></a>
                     <ul class="submenu">
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Our team</a></li>
@@ -310,8 +311,9 @@
                     </h3>
                     <button class="button button-outline button-outline-small">Learn more</button>
                 </div>
+
                 <div class="col-12 col-lg-6 upcomingEvent">
-                    <div class="row d-flex align-items-center px-3 px-lg-5 ">
+                    <div class="row d-flex align-items-center px-lg-5 mx-0">
                         <div class="col-12 col-lg-5">
                             <img class="upcomingEvent__image" src="./assets/images/event-2.png" alt="">
                         </div>
@@ -323,7 +325,7 @@
                             <button class="button button-outline button-outline-small">Learn more</button>
                         </div>
                     </div>
-                    <div class="row d-flex align-items-center my-5 px-3 px-lg-5">
+                    <div class="row d-flex align-items-center my-5 px-lg-5 mx-0">
                         <div class="col-12 col-lg-5">
                             <img class="upcomingEvent__image" src="./assets/images/event-3.png" alt="">
                         </div>
