@@ -172,7 +172,7 @@ body {
     align-items: center;
     background-color: white;
     box-shadow: -4px 4px 16px rgba(191, 191, 191, 0.08);
-    padding: 5px 15px;
+    padding: 5px;
     border-radius: 50px;
     gap: 10px;
     border: 1px solid rgb(181, 181, 181);
@@ -185,10 +185,10 @@ body {
 .search__searchInput {
     border: none;
     outline: none;
-    flex: 1;
 }
 .search__voiceIcon {
     color: rgb(191, 191, 191);
+    padding: 0 20px;
 }
 
 .nav__hamburger i {
@@ -206,7 +206,7 @@ Sidebar
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .nav__links .nav__search {
@@ -236,6 +236,10 @@ Sidebar
 .submenu li a:hover {
     color: #003e71;
     text-decoration: underline;
+}
+
+.submenu li a {
+    font-size: 16px;
 }
 
 .nav__link:hover .submenu {
@@ -578,6 +582,9 @@ Sidebar
         display: none;
     }
     .nav__donation--main {
+        display: none;
+    }
+    .language--main {
         display: none;
     }
 }
