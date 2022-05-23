@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Joseph's Health Care - London</title>
+
+    <!-- boostrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- our style -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/services.css">
+</head>
+
+<body>
+
+    <!-- information -->
+    <div class="info">
+        <p class="info__description">
+            <i class="info__icon fa-solid fa-circle-exclamation"></i>
+            <span class="info__title">Covid-19 Updates :</span>
+            <span class="info__message">Important information for patients, families and visitors to read before
+                coming to our sites.</span>
+            <span class="info__more">
+                <a
+                    href="https://www.sjhc.london.on.ca/about-us/about-st-josephs-health-care-london/our-performance/patient-safety-covid19">
+                    Learn more.
+                </a>
+            </span>
+        </p>
+        <!-- <i class="info__close fa-solid fa-xmark"></i> -->
+    </div>
+
+    <!-- navigation -->
+    <div class="nav">
+        <div class="container">
+            <div class="row">
+                <div class="nav__logos col-4">
+                    <a href="./index.html"><img src="./assets/logo/logo-color-hc.svg" alt="logo"></a>
+                    <img src="./assets/logo/logo-color-foundation.svg" alt="logo">
+                </div>
+                <div class="nav__options col-8">
+                    <div class="nav__search nav__search--main">
+                        <i class="search__searchIcon fa-solid fa-search"></i>
+                        <input class="search__searchInput" type="text" placeholder="Search">
+                        <i class="search__voiceIcon fa-solid fa-microphone"></i>
+                    </div>
+                    <button class="nav__donation nav__donation--main button button-primary">Make a Donation</button>
+                    <div class="language language--main"><a href="#">EN</a> | <a href="#">FR</a></div>
+                    <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight" class="nav__hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">
+                <div class="language"><a href="#">EN</a> | <a href="#">FR</a></div>
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav__links">
+                <li class="nav__link">
+                    <div class="nav__search">
+                        <i class="search__searchIcon fa-solid fa-search"></i>
+                        <input class="search__searchInput" type="text" placeholder="Search">
+                        <i class="search__voiceIcon fa-solid fa-microphone"></i>
+                    </div>
+                </li>
+                <li class="nav__link"><a href="./index.html">Mental health <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Finding help</a></li>
+                        <li><a href="#">Brochures</a></li>
+                        <li><a href="#">Your mental health questionnaire</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="#">Services <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Psychiatry</a>
+                            <ul class="submenu-2">
+                                <li><a href="./appointments.html">Book Appointments</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="#">News <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Press releases</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="#">About <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our team</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link">
+                    <a href="#">
+                        <button class="nav__donation button button-primary">Make a Donation</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content margin-lg">
+            <div class="col-12 col-sm-12 col-lg-8">
+                <h1 class="heading">Mental Health Care</h1>
+                <p>
+                    At St. Joseph’s we are committed to helping individuals with mental illness achieve their personal
+                    goals while
+                    supporting the patient’s family/support network. Our vision at St. Joseph’s is to earn complete
+                    confidence in the care
+                    we provide and to make a lasting difference in the quest to live fully.
+                </p>
+                <p>
+                    Mental health care has seen a vast amount of change in our community. In June 2013, St. Joseph’s
+                    opened
+                    Southwest Centre
+                    for Forensic Mental Health Care in Elgin County and in November 2014, two of St. Joseph’s health
+                    care
+                    facilities –
+                    Parkwood Hospital and Regional Mental Health Care London – came together in one location under one
+                    new
+                    name: Parkwood
+                    Institute, with the opening of the new Mental Health Care Building.
+                </p>
+                <p>
+                    Southwest Centre for Forensic Mental Health Care is a facility for individuals with a mental illness
+                    who
+                    have come into
+                    contact with the law.
+                </p>
+                <p>
+                    The Mental Health Care Building at Parkwood Institute is dedicated to those with severe and
+                    persistent
+                    mental illness in
+                    need of longer-stay specialized mental health care.
+                </p>
+
+                <!-- quotes -->
+                <div class="quotes">
+                    <p>
+                        “Mental health is a state of well-being in which the individual realizes his or her own
+                        potential, can cope with the
+                        normal stresses of life, can work productively and fruitfully, and is able to make a
+                        contribution to her or his own
+                        community.”
+                    </p>
+                    <span class="quotes__author">~Mental Health Commission of Canada</span>
+                </div>
+
+                <!-- pholosophy -->
+                <div class="philosophy">
+                    <h2 class="heading2">Recovery philosophy of care</h2>
+                    <p>
+                        The mental health care programs at St. Joseph’s strive to provide a positive, respectful,
+                        culturally sensitive
+                        environment that understands the unique needs of every individual. Our care providers assist
+                        patients in their personal
+                        journey beyond the limitations of illness and toward recovery.
+                    </p>
+                    <p> The overarching goal of the recovery philosophy of care is grounded in a treatment program which
+                        focuses on helping each
+                        patient live a full and meaningful life. St. Joseph's works closely with patients and families
+                        to
+                        identify goals and
+                        learn what is important to them on their journey to recovery.
+                    </p>
+                    <p> Recovery, in mental health care, is not defined by the absence of the illness (as an individual
+                        may
+                        always live with
+                        mental illness) instead it describes the management of the illness and symptoms. Management
+                        involves
+                        coping with mental
+                        illness and continuing to thrive in the community.
+                    </p>
+                    <p>Through intensive work with our care teams, patients are able to develop new skills needed to
+                        successfully reintegrate
+                        back into the community.
+                    </p>
+                </div>
+
+
+                <!--  -->
+                <!-- contact us -->
+                <!--  -->
+                <div class="contact section" id="contact">
+                    <h1>Contact us</h2>
+
+                        <p><b>Parkwood Institute Mental Health Care Building</b> <br>
+                            550 Wellington Road <br>
+                            London, Ontario N6C 0A7 <br>
+                            Phone: 519 646-6100
+                        </p>
+                        <ul>
+                            <li>Virtual tour: Southwest Centre for Forensic Mental Health Care</li>
+                            <li>Direction, map, location information: Southwest Centre for Forensic Mental Health Care
+                            </li>
+                        </ul>
+                        <p>
+                            <b>Southwest Centre for Forensic Mental Health Care</b> <br>
+                            401 Sunset Drive <br>
+                            St. Thomas, Ontario N5P 3C6 <br>
+                            Phone: 519 646-6100
+                        </p>
+                        <ul>
+                            <li>Virtual tour: Parkwood Institute Mental Health Care Building </li>
+                            <li>Directions, map, location information: Parkwood Institute Mental Health Care Building
+                            </li>
+                        </ul>
+                </div>
+
+
+                <div class="services section" id="services">
+                    <h2 class="heading">Services</h2>
+                    <div class="">
+                        <h2 class="heading2 service">Adult Ambulatory: Outpatient Consultation and Collaborative Care
+                        </h2>
+                        <p>Adult Ambulatory Services provide assistance to adults who struggle with complex and severe
+                            mental health issues as an alternative to inpatient care. This team also offers education
+                            and
+                            consultation services to
+                            health care providers in the region. The services may be considered an alternative to
+                            inpatient
+                            care. A flexible team of
+                            professionals provide a wide range of services depending on the needs of the patients.
+                            Supports
+                            include adherence strategies/
+                            medication management, functional assessment, psychotherapy, outreach and cognitive
+                            behavioural
+                            rehabilitation. The
+                            team is available to provide consultation services to other St. Joseph’s programs and
+                            external
+                            agencies.</p>
+                        <ul>
+                            <li>Virtual tour: Parkwood Institute Mental Health Care Building </li>
+                            <li>Directions, map, location information: Parkwood Institute Mental Health Care Building
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <h2 class="heading2 service">Assertive Community Treatment (ACT teams)</h2>
+                        <p>
+                            Assertive Community Treatment (ACT) Teams provide specialized intensive community-based
+                            services to adults living with
+                            severe, complex and persistent mental illness between the ages of 18 and 65.
+                        </p>
+                        <p>
+                            ACT clinicians are specially trained to support clients in regaining a healthy, meaningful
+                            and fulfilling place in their
+                            community. The team can be made of up of psychiatrists, nurses, occupational therapists,
+                            recreation therapists, social
+                            workers, vocational counsellors, and addictions counsellors. Team members offer
+                            comprehensive treatment, support and
+                            rehabilitation to enable individuals to fully reintegrate into the community of their
+                            choice.
+                        </p>
+                        <p>
+                            St. Joseph's Health Care London manages seven ACT teams across Southwestern Ontario,
+                            covering London-Middlesex, Elgin
+                            and Oxford Counties.
+                        </p>
+                        <p>
+                            Services include but are not limited to:
+                        </p>
+                        <ul>
+                            <li>Medication management</li>
+                            <li>Activities of daily living support</li>
+                            <li>crisis planning and intervention</li>
+                            <li>Health and wellness education</li>
+                            <li>Help with addiction issues</li>
+                            <li>Employment support</li>
+                            <li>Education support</li>
+                            <li>Recreational opportunities</li>
+                        </ul>
+                        <p>
+                            ACT uses proven therapeutic principles and approaches with the following key goals:
+                        </p>
+                        <ul>
+                            <li>Achieve better control of symptoms</li>
+                            <li>Increase housing stability</li>
+                            <li>Enhance social and family supports</li>
+                            <li>Promote independence</li>
+                            <li>Decrease time spent in hospital</li>
+                            <li>Improve quality of life</li>
+                        </ul>
+                        <p>All referrals are processed through our Centralized Access Point.</p>
+                    </div>
+
+
+                    <!--  -->
+                    <!-- how to access -->
+                    <!--  -->
+                    <div class="howToAccess section" id="howToAccess">
+                        <div class="heading">How to access?</div>
+                        <p>Experiencing a mental health crisis or urgent situation in London-Middlesex?
+                        </p>
+                        <ul>
+                            <li>Contact Reach Out crisis response line: Call 519 433-2023 or 1-866-963-2023 (The crisis
+                                response line and web chat is 24
+                                hours a day, 7 days a week, is free and confidential)</li>
+                            <li>or go to the CMHA Crisis Centre located at 648 Huron St., in London ON, 519-434-9191
+                            </li>
+                            <li>or go to your nearest emergency department</li>
+                        </ul>
+                    </div>
+
+                    <h2>Hospital-based mental health care services</h2>
+                    <h3>Inpatient mental health care services</h3>
+                    <p>
+                        Access to St. Joseph’s specialized, inpatient mental health care program is coordinated through
+                        referrals from acute
+                        mental health facilities within our Southwestern Ontario catchment area, such as London Health
+                        Sciences Centre (LHSC).
+                        Our Coordinated Access Team of highly skilled and experienced mental health professionals manage
+                        incoming requests for
+                        inpatient care from psychiatrists at our Schedule One facility partners.
+                    </p>
+                    <p>
+                        A psychiatrist or a member of the mental health team is required to complete the referral form.
+                    </p>
+                    <p>
+                        For more information contact the Coordinated Access Team:
+                    </p>
+                    <ul>
+                        <li>Telephone 519 646-6425</li>
+                        <li> 519 646-6426</li>
+                    </ul>
+
+
+                    <h3>Outpatient mental health care services</h3>
+                    <p>For adults aged 18 to 64, all referral requests for hospital-based mental health outpatient
+                        services at both London
+                        Health Sciences Centre and St. Joseph’s Health Care London are made through one Centralized
+                        Access Point:
+                    </p>
+                    <p>Referral forms:</p>
+                    <ul>
+                        <li>Adult Mental Health Ambulatory Centralized Access point (CAP) referral form (download form).
+                        </li>
+                        <li>Adult Mental Health Ambulatory Centralized Access point (CAP) referral form (Practice
+                            Solutions Custom Form .cfm)
+                        </li>
+                        <li>Instructions for importing forms into Accuro - In Accuro EMR, search "LHSC - SJHC Adult
+                            Mental Health Ambulatory CAP
+                            Referral - DC" under the Download forms tab. For adults aged 65 and over, all referral
+                            requests for outpatient mental
+                            health services at both London Health Sciences Centre and St. Joseph’s Health Care London
+                            are made through the Geriatric
+                            Ambulatory Access Team referral form (pdf).
+                        </li>
+                    </ul>
+
+                    <p>Connect with your primary care physician/family doctor or nurse practitioner. Your primary care
+                        provider will assess you
+                        and your situation and with your input, determine the best course of action.
+                    </p>
+                    <p>If a referral to hospital-based outpatient service is required, your family physician/nurse
+                        practitioner will complete
+                        the mental health care referral form and submit it through the Centralized Access Point.
+                    </p>
+                    <p>Once a referral from your family doctor is received, you will be contacted by phone for a brief
+                        interview which will
+                        result in an initial appointment with the most appropriate service. During this appointment, a
+                        comprehensive mental
+                        health assessment will be completed and treatment goals identified. If it is agreed that our
+                        services will be helpful,
+                        we will introduce you to your team and arrange follow-up appointments.
+                    </p>
+                    <p>For more information, including available outpatient services and eligibility criteria, visit the
+                        LHSC Centralized
+                        Access Point for Adult Ambulatory Mental Health Services webpage.
+                    </p>
+                    <p>Questions about the Centralized Access Point referral process can be directed by e-mail to
+                        centralreferralMH@lhsc.on.ca
+                        or by telephone: 519 667-6777.
+                    </p>
+
+
+
+                    <h3>Need help accessing mental health services in your area?</h3>
+                    <p>If you need assistance with how to obtain a referral through a physician or are searching for
+                        contact information for
+                        mental health services and supports in your community, contact ConnexOntario for helpful,
+                        supportive information and
+                        referral specialists who are available 24 hours a day.
+                    </p>
+                    <p>
+                        ConnexOntario provides free, confidential and anonymous information for people experiencing
+                        problems with mental
+                        illness: 1-866-531-2600.</p>
+
+
+
+                    <!--  -->
+                    <!-- care team -->
+                    <!--  -->
+
+                    <div class="section careTeam" id="careTeam">
+                        <h1>Care team</h1>
+                        <p>Upon admission to one of Parkwood Institute’s Mental Health Care Programs, your care team may
+                            be comprised of the
+                            following highly trained and qualified professionals to help meet your needs and achieve
+                            your goals. Your care is also
+                            supported by our Mental Health Partners.</p>
+
+
+                        <h3>Behaviour Therapist</h3>
+                        <p>Behaviour therapists work within an interdisciplinary team using Applied Behaviour Analysis
+                            (ABA) to change socially
+                            relevant behaviour. Behaviour therapists use a variety of assessment techniques to determine
+                            why an individual engages
+                            in problem behaviour and investigate factors that may contribute to the behaviour. Positive
+                            based strategies are
+                            developed to teach relevant skills and decrease maladaptive behaviour. ABA is most widely
+                            used with individuals with
+                            autism and developmental disabilities but is also effective in treating individuals with
+                            mental illness.</p>
+
+
+                        <h3>Child Care Worker (Adolescent Program only)</h3>
+                        <p>Child care workers facilitate positive change in youth by assisting the young person in
+                            developing an understanding of
+                            how their actions are delaying them from optimizing their natural development toward
+                            independence. In this process,
+                            child care workers consider the youth’s wishes, their developmental stage and the young
+                            person’s life experiences</p>
+
+
+                        <h3>Developmental Service Worker (DSW)</h3>
+                        <p>A DSW supports people in all stages of life who have a developmental disability. DSWs have
+                            core values which focus on
+                            social justice, empowerment, dignity, self-worth, human relationships and integrity.</p>
+
+
+                        <h3>Dietitian</h3>
+                        <p>The registered dietitians provide individual and group counselling in all aspects of
+                            nutrition including diabetes
+                            education, healthy eating and weight management. The dietitians have an excellent
+                            understanding of the impact of mental
+                            health on nutrition. They will work with patients and families to answer nutrition questions
+                            and plan nutritional care.</p>
+
+
+                        <h3>Nurse</h3>
+                        <p>Nurses are an integral part of your health care team. During your stay, you, your family and
+                            support system will partner
+                            with registered nurses, registered practical nurses, clinical nurse specialists and/or nurse
+                            practitioners. A nurse
+                            provides skilled support, a safe environment, medication management, proactive interventions
+                            and treatments with
+                            patients and their families, while advocating for the unique needs, preferences and rights
+                            of those entrusted to their
+                            care. Nurses join with patients and families to support them in their journey toward
+                            recovery and optimal functioning,
+                            using best practices.Nurses are an integral part of your health care team. During your stay,
+                            you, your family and
+                            support system will partner with registered nurses, registered practical nurses, clinical
+                            nurse specialists and/or nurse
+                            practitioners. A nurse provides skilled support, a safe environment, medication management,
+                            proactive interventions and
+                            treatments with patients and their families, while advocating for the unique needs,
+                            preferences and rights of those
+                            entrusted to their care. Nurses join with patients and families to support them in their
+                            journey toward recovery and
+                            optimal functioning, using best practices.</p>
+
+
+                        <h3>Occupational Therapist</h3>
+                        <p>Occupational therapy is about helping people do activities that are important for
+                            them—looking after themselves and
+                            their homes, working and being involved in their communities. Occupational therapists
+                            support people in doing activities
+                            (occupations) so they can be healthy, feel good about themselves and manage daily life.</p>
+
+
+                        <h3>Pharmacist</h3>
+                        <p>Pharmacists are medication experts - they are extensively trained in the appropriate use of
+                            medications, including
+                            herbal supplements, prescription and non-prescription medications. They work with the
+                            patient’s care team to regularly
+                            review medication orders and provide drug information to ensure safe and effective
+                            medication use for each patient.</p>
+
+
+                        <h3>Physiotherapist</h3>
+                        <p>The role of the physiotherapist is to maximize the independence of a patient’s physical
+                            function. The physiotherapist
+                            also educates patients and staff in the proper use of mobility equipment and in the
+                            performance of exercises in a safe
+                            manner. Exercise programs are done in either an individual or in a group setting. Patients
+                            are assessed and a treatment
+                            plan is implemented with on-going reassessment.</p>
+
+
+                        <h3>Psychiatrist</h3>
+                        <p>A psychiatrist is a doctor who specializes in assessing, diagnosing and treating mental
+                            disorders. A psychiatrist may
+                            use a variety of psychotherapies including facilitating psychiatric rehabilitation to treat
+                            patients as well as
+                            administering medication.</p>
+
+
+                        <h3>Psychologist</h3>
+                        <p>Psychologists are experts in human behaviour. In a mental health setting, they provide
+                            assessments, treatment and
+                            rehabilitation. Psychologists also offer consultation to other team members, and contribute
+                            in the areas of applied
+                            research and education related to mental health issues.</p>
+
+
+                        <h3>Psychological Associates</h3>
+                        <p>Psychological Associates are practitioners of psychology who deliver similar services as
+                            psychologists. Psychological
+                            services are sometimes provided by non-regulated practitioners called psychometrists.
+                            Psychometrists work under the
+                            professional supervision of a psychologist, and are often employed to do testing or to
+                            provide structured forms of
+                            psychological therapy.</p>
+
+
+                        <h3>Rehabilitation Counsellor</h3>
+                        <p>Rehabilitation counsellors provide varied and specialized services. Their primary function is
+                            to assist with the
+                            development of vocational skills to enable individuals with disabilities to secure gainful
+                            employment and coping skills
+                            to enable them to function with dignity and independence in their community. Rehabilitation
+                            counsellors work
+                            collaboratively to evaluate the changing needs of the consumer and community to ensure the
+                            required services are being
+                            offered.</p>
+
+
+                        <h3>Social Worker</h3>
+                        <p>Sometimes problems with family, relationships, illness/mental illness, or practical issues
+                            like finances and housing can
+                            cause concern and worry that may affect our physical and mental health and well-being. A
+                            social worker can help you with
+                            these concerns. Social workers in mental health have specialized skills in counselling,
+                            psychotherapy, family work,
+                            group work, crisis intervention, community liaison and discharge planning. Often, the social
+                            worker is the main contact
+                            person for the patient, family or community.</p>
+
+
+                        <h3>Spiritual Care Provider</h3>
+                        <p>A chaplain provides a number of services including emotional and spiritual support and
+                            counselling, crisis intervention,
+                            grief and bereavement counselling, weekly meditation sessions, spirituality groups, worship
+                            and sacramental ministry.
+                            Chaplains work with patients as well as their friends and family to find spiritual care and
+                            support within their
+                            hospital experience. Spiritual care supports people from any religious or non-religious
+                            background. Feel free to ask
+                            your care provider to connect you with spiritual care, if you wish.</p>
+
+
+                        <h3>Therapeutic Recreationist</h3>
+                        <p>Participating in leisure activities provides structure to one’s day. Therapeutic recreation
+                            professionals assist
+                            individuals with exploring, resuming and pursuing leisure interests with an optimal level of
+                            independence. Therapeutic
+                            recreationists provide a supportive setting in which to practice and apply skills related to
+                            leisure interests of choice
+                            in both the hospital and community.</p>
+
+                        <center><img src="./assets/images/mentalHealth.png" alt=""></center>
+                        <p class="my-3">Mental Health Partners is now comprised of ten partner hospitals in total:
+                        </p>
+                        <ul>
+                            <li>Centre for Addiction and Mental Health</li>
+                            <li>North Bay Regional Health Centre</li>
+                            <li>Ontario Shores Centre for Mental Health Sciences</li>
+                            <li>Providence Care</li>
+                            <li>Royal Ottawa Mental Health Centre</li>
+                            <li>St. Joseph’s Care Group / Thunder Bay Regional Health Sciences Centre</li>
+                            <li>St. Joseph’s Health Care London</li>
+                            <li>St. Joseph’s Healthcare Hamilton</li>
+                            <li>Waypoint Centre for Mental Health Care</li>
+                        </ul>
+
+                        <p>Together, we provide a continuum of care for people living with mental illness and/or
+                            addictions across Ontario – from
+                            specialized inpatient acute and rehabilitative care, to outpatient services for people
+                            living in the community. In
+                            collaboration with system partners, we offer collective support as well as specialized
+                            clinical and innovation expertise
+                            to Ontario Health, towards building a comprehensive, connected mental health and addictions
+                            system of care for
+                            Ontarians.</p>
+
+                        <img class="team-img" src="./assets/images/services-team.png" alt="">
+
+
+                        <!-- patient resources -->
+                        <div class="section patientResources" id="patientResources">
+                            <h1>Patient Resources</h1>
+                            <ul>
+                                <li><a href="#"> Parkwood Institute Mental Health Care Building Patient and Family
+                                        Handbook (EN)
+                                    </a></li>
+                                <li><a href="#"> Parkwood Institute Mental Health Care Building Patient and Family
+                                        Handbook (FR)
+                                    </a></li>
+                                <li>
+                                    <a href="#"> Research and education </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- programs -->
+                        <div class="section programs" id="programs">
+                            <h1>Programs</h1>
+                            <ul>
+                                <li><a href="#"> Biigajiiskaan: Indigenous Pathways to Mental Wellness </a></li>
+                                <li><a href="#"> Community Homes for Opportunity (CHO) </a></li>
+                                <li><a href="#"> Mental Health Care: Assessment Program </a></li>
+                                <li><a href="#"> Mental Health Care: Concurrent Disorders Services </a></li>
+                                <li><a href="#"> Mental Health Care: Dual Diagnosis Program </a></li>
+                                <li><a href="#"> Mental Health Care: Family Resource Centre and Family Advisory Council
+                                    </a></li>
+                                <li><a href="#"> Mental Health Care: Forensic Program </a></li>
+                                <li><a href="#"> Mental Health Care: Geriatric Psychiatry Program </a></li>
+                                <li><a href="#"> Mental Health Care: Steele Street Treatment and Rehabilitation
+                                        Residential Program </a></li>
+                                <li><a href="#"> Mental Health Care: Treatment and Rehabilitation Program </a></li>
+                                <li><a href="#"> Mental Health Care: Zero Suicide Initiative </a></li>
+                                <li><a href="#"> Patient Council at Parkwood Institute and Southwest Centre for Forensic
+                                        Mental Health Care</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-12 col-lg-4">
+                <div class="sidebar--healthCare sidebar">
+                    <b>
+                        <h4>Mental Health Care</h4>
+                    </b>
+                    <ul>
+                        <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact Details</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#howToAccess"><i class="fa-solid fa-chevron-right"></i> How to Access</a></li>
+                        <li><a href="#careTeam"><i class="fa-solid fa-chevron-right"></i> Care team</a></li>
+                        <li><a href="#patientResources"><i class="fa-solid fa-chevron-right"></i> Patient and Caregiver
+                                resources</a></li>
+                        <li><a href="#programs"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#">
+        <div class="moveToTop"><i class="fa-solid fa-angles-up"></i></div>
+    </a>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-12 logo-container">
+                    <div class="logo">
+                        <img class="footer__logo" src="./assets/logo/logo-white-hc.svg" alt="">
+                        <p class="footer__phone"><i class="fa-solid fa-phone"></i> 519 646-6100</p>
+                    </div>
+                    <div class="logo">
+                        <img class="footer__logo" src="./assets/logo/logo-white-foundation.svg" alt="">
+                        <p class="footer__phone"><i class="fa-solid fa-phone"></i> 519 646-6085</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 quickLinks">
+                    <h2 class="quickLinksHeading">Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Areas of Care</a></li>
+                        <li><a href="#">Fundraising priorities</a></li>
+                        <li><a href="#">Referral forms</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Strategic Plan</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Patient and Family</a>
+                            <p>Feedback : Contact patient Relations</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12 socialAccredition">
+                    <div class="social">
+                        <img src="./assets/icons/icon-facebook.svg" alt="">
+                        <img src="./assets/icons/icon-linkedin.svg" alt="">
+                        <img src="./assets/icons/icon-twitter.svg" alt="">
+                        <img src="./assets/icons/icon-youtube.svg" alt="">
+                    </div>
+                    <div class="accredition">
+                        <img src="./assets/images/batch-acccredition-1.png" alt="">
+                        <img src="./assets/images/batch-acccredition-2.png" alt="">
+                    </div>
+                    <div class="western">
+                        <img src="./assets/images/western.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright">
+                <p>Copyright © 2020 St. Joseph's Health Care London. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- javascript files -->
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- our js -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

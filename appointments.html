@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Joseph's Health Care - London</title>
+
+    <!-- boostrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- our style -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/appointments.css">
+</head>
+
+<body>
+
+    <!-- information -->
+    <div class="info">
+        <p class="info__description">
+            <i class="info__icon fa-solid fa-circle-exclamation"></i>
+            <span class="info__title">Covid-19 Updates :</span>
+            <span class="info__message">Important information for patients, families and visitors to read before
+                coming to our sites.</span>
+            <span class="info__more">
+                <a
+                    href="https://www.sjhc.london.on.ca/about-us/about-st-josephs-health-care-london/our-performance/patient-safety-covid19">
+                    Learn more.
+                </a>
+            </span>
+        </p>
+        <!-- <i class="info__close fa-solid fa-xmark"></i> -->
+    </div>
+
+    <!-- navigation -->
+    <div class="nav">
+        <div class="container">
+            <div class="row">
+                <div class="nav__logos col-4">
+                    <a href="./index.html"><img src="./assets/logo/logo-color-hc.svg" alt="logo"></a>
+                    <img src="./assets/logo/logo-color-foundation.svg" alt="logo">
+                </div>
+                <div class="nav__options col-8">
+                    <div class="nav__search nav__search--main">
+                        <i class="search__searchIcon fa-solid fa-search"></i>
+                        <input class="search__searchInput" type="text" placeholder="Search">
+                        <i class="search__voiceIcon fa-solid fa-microphone"></i>
+                    </div>
+                    <button class="nav__donation nav__donation--main button button-primary">Make a Donation</button>
+                    <div class="language language--main"><a href="#">EN</a> | <a href="#">FR</a></div>
+                    <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight" class="nav__hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">
+                <div class="language"><a href="#">EN</a> | <a href="#">FR</a></div>
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav__links">
+                <li class="nav__link">
+                    <div class="nav__search">
+                        <i class="search__searchIcon fa-solid fa-search"></i>
+                        <input class="search__searchInput" type="text" placeholder="Search">
+                        <i class="search__voiceIcon fa-solid fa-microphone"></i>
+                    </div>
+                </li>
+                <li class="nav__link"><a href="./index.html">Mental health <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Finding help</a></li>
+                        <li><a href="#">Brochures</a></li>
+                        <li><a href="#">Your mental health questionnaire</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="#">Services <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Psychiatry</a>
+                            <ul class="submenu-2">
+                                <li><a href="./appointments.html">Book Appointments</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="#">News <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Press releases</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="#">About <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our team</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link">
+                    <a href="#">
+                        <button class="nav__donation button button-primary">Make a Donation</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-12 col-lg-6">
+                <h2 class="">Book an appointment</h1>
+                    <form class="row g-3">
+                        <div class="col-6">
+                            <label for="firstName" class="form-label">Firstname<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="firstName" placeholder="St. Jospesh's" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="lastname" class="form-label">Lastname<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Health Care" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="contactNumber" class="form-label">Contact number<span
+                                    class="required">*</span></label>
+                            <input inputmode="numeric" type="number" class="form-control" id="contactNumber" required>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="emailAddress" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailAddress">
+                        </div>
+
+                        <!-- appointment date -->
+                        <div class="col-md-12">
+                            <label class="form-label">Appointment dates<span class="field__description"> (You will be
+                                    given appointment on one of the two
+                                    dates)</span></label>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="appointmentDate" class="form-label">Date 1</label>
+                                    <input type="date" class="form-control" id="appointmentDate" placeholder="Option 1">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="appointmentDate" class="form-label">Date 2</label>
+                                    <input type="date" class="form-control" id="appointmentDate" placeholder="Option 1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Time frame -->
+                        <div class="col-md-12">
+                            <label class="form-label">Time frame<span class="field__description"> (Choose From and To
+                                    time)</span></label>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="appointmentDate" class="form-label">From</label>
+                                    <input type="time" class="form-control" id="appointmenttime" placeholder="Option 1">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="appointmenttime" class="form-label">To</label>
+                                    <input type="time" class="form-control" id="appointmenttime" placeholder="Option 1">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+
+                        <div class="col-5">
+                            <label for="inputAddress" class="form-label">Province</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Alaska">
+                        </div>
+
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Postal Code</label>
+                            <input type="text" class="form-control" id="inputZip" placeholder="99950">
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-lg my-3 btn-primary">Book an appointment</button>
+                        </div>
+                    </form>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img class="contact-image" src="./assets/images/contact.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#">
+        <div class="moveToTop"><i class="fa-solid fa-angles-up"></i></div>
+    </a>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-12 logo-container">
+                    <div class="logo">
+                        <img class="footer__logo" src="./assets/logo/logo-white-hc.svg" alt="">
+                        <p class="footer__phone"><i class="fa-solid fa-phone"></i> 519 646-6100</p>
+                    </div>
+                    <div class="logo">
+                        <img class="footer__logo" src="./assets/logo/logo-white-foundation.svg" alt="">
+                        <p class="footer__phone"><i class="fa-solid fa-phone"></i> 519 646-6085</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 quickLinks">
+                    <h2 class="quickLinksHeading">Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Areas of Care</a></li>
+                        <li><a href="#">Fundraising priorities</a></li>
+                        <li><a href="#">Referral forms</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Strategic Plan</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Patient and Family</a>
+                            <p>Feedback : Contact patient Relations</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12 socialAccredition">
+                    <div class="social">
+                        <img src="./assets/icons/icon-facebook.svg" alt="">
+                        <img src="./assets/icons/icon-linkedin.svg" alt="">
+                        <img src="./assets/icons/icon-twitter.svg" alt="">
+                        <img src="./assets/icons/icon-youtube.svg" alt="">
+                    </div>
+                    <div class="accredition">
+                        <img src="./assets/images/batch-acccredition-1.png" alt="">
+                        <img src="./assets/images/batch-acccredition-2.png" alt="">
+                    </div>
+                    <div class="western">
+                        <img src="./assets/images/western.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright">
+                <p>Copyright © 2020 St. Joseph's Health Care London. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- javascript files -->
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- our js -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

@@ -47,8 +47,29 @@ body {
     line-height: 1;
 }
 
+/* h2,
+.heading2 {
+    color: var(--primary);
+    font-family: var(--heading);
+    font-size: 52px;
+    line-height: 1;
+    margin-top: 50px;
+}
+
+h3 {
+    color: var(--primary);
+    font-family: var(--heading);
+    font-size: 32px;
+    line-height: 1;
+    margin-top: 30px;
+} */
+
 .heading-lg {
     font-size: 120px;
+}
+
+.margin-lg {
+    margin: 100px 0;
 }
 /* buttons */
 .button {
@@ -114,6 +135,10 @@ body {
     margin-left: 10px;
 }
 
+.blank {
+    height: 15px;
+    width: 100%;
+}
 /*------------------- 
     corona alert 
 ---------------------*/
@@ -181,10 +206,12 @@ body {
 }
 .search__searchIcon {
     color: rgb(191, 191, 191);
+    margin-left: 10px;
 }
 .search__searchInput {
     border: none;
     outline: none;
+    flex: 1;
 }
 .search__voiceIcon {
     color: rgb(191, 191, 191);
@@ -218,6 +245,7 @@ Sidebar
 }
 .nav__link:hover {
     background: var(--primary-light);
+    text-decoration: underline;
 }
 
 .nav__link a {
@@ -239,7 +267,11 @@ Sidebar
 }
 
 .submenu li a {
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.submenu-2 {
+    display: none;
 }
 
 .nav__link:hover .submenu {
@@ -249,6 +281,9 @@ Sidebar
     display: block;
 }
 
+.submenu:hover .submenu-2 {
+    display: block;
+}
 /*------------------- 
         Header 
 ---------------------*/
@@ -546,8 +581,69 @@ Sidebar
     color: #d0eaff;
 }
 
+.moveToTop {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 30px rgb(78, 160, 255);
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
 /* media queries */
 @media screen and (max-width: 768px) {
+    .heading {
+        font-size: 58px;
+    }
+
+    .section_headerWithBtn {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .careMatters__description {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+    .footer .row {
+        gap: 30px;
+    }
+    .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .logo {
+        align-items: center;
+    }
+
+    .socialAccredition {
+        align-items: flex-start;
+    }
+
+    .nav__search--main {
+        display: none;
+    }
+    .nav__donation--main {
+        display: none;
+    }
+    .language--main {
+        display: none;
+    }
+    .logo:first-child {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .heading {
         font-size: 58px;
     }
