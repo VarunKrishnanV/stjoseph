@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Joseph's Health Care - London</title>
+
+    <!-- boostrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- our style -->
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+
+    <!-- information -->
+    <div class="info">
+        <p class="info__description">
+            <i class="info__icon fa-solid fa-circle-exclamation"></i>
+            <span class="info__title">Covid-19 Updates :</span>
+            <span class="info__message">Important information for patients, families and visitors to read before
+                coming to our sites.</span>
+            <span class="info__more">
+                <a
+                    href="https://www.sjhc.london.on.ca/about-us/about-st-josephs-health-care-london/our-performance/patient-safety-covid19">
+                    Learn more.
+                </a>
+            </span>
+        </p>
+        <!-- <i class="info__close fa-solid fa-xmark"></i> -->
+    </div>
+
+    <!-- navigation -->
+    <div class="nav">
+        <div class="container">
+            <div class="row">
+                <div class="nav__logos col-4">
+                    <a href="./index.html"><img src="./assets/logo/logo-color-hc.svg" alt="logo"></a>
+                    <img src="./assets/logo/logo-color-foundation.svg" alt="logo">
+                </div>
+                <div class="nav__options col-8">
+                    <div class="nav__search nav__search--main">
+                        <i class="search__searchIcon fa-solid fa-search"></i>
+                        <input class="search__searchInput" type="text" placeholder="Search">
+                        <i class="search__voiceIcon fa-solid fa-microphone"></i>
+                    </div>
+                    <button class="nav__donation nav__donation--main button button-primary">Make a Donation</button>
+                    <div class="language language--main"><a href="#">EN</a> | <a href="#">FR</a></div>
+                    <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight" class="nav__hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">
+                <div class="language"><a href="#">EN</a> | <a href="#">FR</a></div>
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav__links">
+                <li class="nav__link">
+                    <div class="nav__search">
+                        <i class="search__searchIcon fa-solid fa-search"></i>
+                        <input class="search__searchInput" type="text" placeholder="Search">
+                        <i class="search__voiceIcon fa-solid fa-microphone"></i>
+                    </div>
+                </li>
+                <li class="nav__link"><a href="./index.html">Home</i></a></li>
+                <li class="nav__link"><a href="./services.html">Mental health <i class="fa-solid fa-chevron-right"></i></a>                    <ul class="submenu">
+                        <li><a href="#">Finding help</a></li>
+                        <li><a href="#">Brochures</a></li>
+                        <li><a href="#">Your mental health questionnaire</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="#">Services <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Psychiatry</a>
+                            <ul class="submenu-2">
+                                <li><a href="./appointments.html">Book Appointments</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="#">News <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Press releases</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a href="#">About <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our team</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link">
+                    <a href="#">
+                        <button class="nav__donation button button-primary">Make a Donation</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- header -->
+        <div class="row header mt-5">
+            <div class="col-12  col-md-12 col-lg-6 header__information">
+                <h1 class="header__title">
+                    St. Joseph's Health Care London
+                </h1>
+                <p class="header__description">
+                    St. Joseph’s Health Care London is one of Ontario’s leading teaching hospitals, contributing to the
+                    advancement of
+                    health care, education and research. We are a partner in London’s academic health sciences
+                    community.
+                </p>
+                <div class="header__cta">
+                    <a href="#">
+                        <button class="button button-primary">Know more</button>
+                    </a>
+                    <a class="link-text" href="#">About our
+                        foundation <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6  header__image">
+                <img src="./assets/images/header-image.png" alt="">
+            </div>
+        </div>
+
+        <!-- services -->
+        <div class="row services">
+            <div class="col-12 col-lg-4 col-sm-12 service__card service__card--1">
+                <div class="card__content">
+                    <h3 class="card__title">
+                        AREAS OF CARE
+                    </h3>
+                    <p class="card__description">
+                        Find the program, service or clinic you are looking for.
+                    </p>
+                    <a href="#">
+                        <button class="button button-small">Learn more</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-sm-12 service__card service__card--2">
+                <div class="card__content">
+                    <h3 class="card__title">
+                        URGENT CARE
+                    </h3>
+                    <p class="card__description">
+                        See conditions treated at Urgent Care and hours of operation.
+                    </p>
+                    <a href="#">
+                        <button class="button button-small">Learn more</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-sm-12 service__card service__card--3">
+                <div class="card__content">
+                    <h3 class="card__title">
+                        FUNDRAISING PRIORITIES
+                    </h3>
+                    <p class="card__description">
+                        You can help improve and even save lives with your support.
+                    </p>
+                    <a href="#">
+                        <button class="button button-small">Learn more</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- find our locations and you matter here -->
+        <div class="row folAndYml">
+            <div class="col-12 col-lg-6">
+
+                <!-- find our locations -->
+                <div class="fol">
+                    <h2 class="fol__heading heading">Find our <span class="heading heading-lg">locations</span> </h2>
+                    <p class="fol__description">St. Joseph’s Health Care London is a major patient care, teaching and
+                        research
+                        centre with multiple locations across the London area.</p>
+                    <button class="button button-primary">View our locations</button>
+                </div>
+
+                <!-- you matter here -->
+                <div class="ymh">
+                    <h2 class="heading">YOU MATTER HERE</h2>
+                    <p class="fol__description">St. Joseph’s is dedicated to helping people live to their fullest by
+                        minimizing the effects of injury, disease and
+                        disability, helping individuals to reclaim their health and independence. Through research and
+                        innovation, our
+                        compassionate care leads to new treatments that improve, extend and save lives.</p>
+                    <button class="button button-outline">Learn more</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 header__image d-flex align-items-center">
+                <img src="./assets/images/img-about.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- latest updates -->
+    <div class="latest">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section_headerWithBtn">
+                    <div class="heading">Latest Updates</div>
+                    <button class="button button-outline">View all the latest updates</button>
+                </div>
+                <div class="d-flex latest__cards flex-column flex-lg-row gap-3 mt-5">
+                    <div class="col-12 col-lg-4 col-sm-12 latest__card latest__card--active">
+                        <div class="latest__content">
+                            <p class="latest__date">April 14, 2022</p>
+                            <h3 class="latest__title">
+                                Dream Lottery is back with so much to WIN!
+                            </h3>
+                            <p class="latest__description">
+                                With a history of early sellouts, it’s clear if you want your chance to WIN BIG you
+                                want to get tickets Fast! The Dream
+                                Lottery, in support of London’s regional hospitals, is back for the spring season
+                                and is offering a grand prize with the
+                                choice between two dream home options or walk away with $1.. </p>
+                            <a href="#" class="link-text">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-sm-12 latest__card">
+                        <div class="latest__content">
+                            <p class="latest__date">April 11, 20222</p>
+                            <h3 class="latest__title">
+                                A Message to Our Community
+                            </h3>
+                            <p class="latest__description">
+                                St. Joseph’s joins all South West hospitals in maintaining masking requirements
+                                indefinitely. Hospitals across the south
+                                west have updated their ongoing protections against COVID-19 and confirm that
+                                current masking requirements for all
+                                individuals entering their facilities will continue indefinitely... </p>
+                            <a href="#" class="link-text">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-sm-12 latest__card">
+                        <div class="latest__content">
+                            <p class="latest__date">April 14, 2022</p>
+                            <h3 class="latest__title">
+                                MEDIA RELEASE: 3D holograms a very real, new operating room tool at St. Joseph’s
+                            </h3>
+                            <p class="latest__description">
+                                London Ontario – At the Roth | McFarlane Hand and Upper Limb Centre at St. Joseph’s
+                                Hospital, Dr. George Athwal has
+                                become a Canadian pioneer in the development and use of digital 3D holograms to
+                                enhance surgical precision for shoulder
+                                replacement patients, which is expected to reduce complications..</p>
+                            <a href="#" class="link-text">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- care matters here -->
+    <div class="careMatters">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-7 col-sm-12  careMatters__content">
+                    <div class="heading">CARE MATTERS HERE</div>
+                    <p class="careMatters__description">We strive for the best care through knowledge.</p>
+                </div>
+                <div class="col-lg-5 col-sm-12 ">
+                    <img class="careMatters__image" src="./assets/images/img-care-matters-here.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- upcoming events -->
+    <div class="upcoming">
+        <div class="container">
+            <div class="row upcomingHeader mb-5">
+                <div class=" col-12 d-flex justify-content-between align-items-center section_headerWithBtn">
+                    <div class="heading">Upcoming events</div>
+                    <button class="sm-mb-5 button button-outline">View all the latest updates</button>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-12 col-lg-6 p-3 upcomingEvent">
+                    <img class="upcomingEvent__image" src="./assets/images/event-1.png" alt="">
+                    <p class="upcomingEvent__date">April 14, 2022</p>
+                    <h3 class="upcomingEvent__title">
+                        Dream Lottery is back with so much to WIN!
+                    </h3>
+                    <button class="button button-outline button-outline-small">Learn more</button>
+                </div>
+
+                <div class="col-12 col-lg-6 upcomingEvent">
+                    <div class="row d-flex align-items-center px-lg-5 mx-0">
+                        <div class="col-12 col-lg-5">
+                            <img class="upcomingEvent__image" src="./assets/images/event-2.png" alt="">
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <p class="upcomingEvent__date">April 14, 2022</p>
+                            <h3 class="upcomingEvent__title">
+                                Dream Lottery is back with so much to WIN!
+                            </h3>
+                            <button class="button button-outline button-outline-small">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center my-5 px-lg-5 mx-0">
+                        <div class="col-12 col-lg-5">
+                            <img class="upcomingEvent__image" src="./assets/images/event-3.png" alt="">
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <p class="upcomingEvent__date">April 14, 2022</p>
+                            <h3 class="upcomingEvent__title">
+                                Dream Lottery is back with so much to WIN!
+                            </h3>
+                            <button class="button button-outline button-outline-small">Learn more</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <a href="#">
+        <div class="moveToTop"><i class="fa-solid fa-angles-up"></i></div>
+    </a>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-12 logo-container">
+                    <div class="logo">
+                        <img class="footer__logo" src="./assets/logo/logo-white-hc.svg" alt="">
+                        <p class="footer__phone"><i class="fa-solid fa-phone"></i> 519 646-6100</p>
+                    </div>
+                    <div class="logo">
+                        <img class="footer__logo" src="./assets/logo/logo-white-foundation.svg" alt="">
+                        <p class="footer__phone"><i class="fa-solid fa-phone"></i> 519 646-6085</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 quickLinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Areas of Care</a></li>
+                        <li><a href="#">Fundraising priorities</a></li>
+                        <li><a href="#">Referral forms</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Strategic Plan</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Patient and Family</a>
+                            <p>Feedback : Contact patient Relations</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12 socialAccredition">
+                    <div class="social">
+                        <img src="./assets/icons/icon-facebook.svg" alt="">
+                        <img src="./assets/icons/icon-linkedin.svg" alt="">
+                        <img src="./assets/icons/icon-twitter.svg" alt="">
+                        <img src="./assets/icons/icon-youtube.svg" alt="">
+                    </div>
+                    <div class="accredition">
+                        <img src="./assets/images/batch-acccredition-1.png" alt="">
+                        <img src="./assets/images/batch-acccredition-2.png" alt="">
+                    </div>
+                    <div class="western">
+                        <img src="./assets/images/western.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright">
+                <p>Copyright © 2020 St. Joseph's Health Care London. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- javascript files -->
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- our js -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
